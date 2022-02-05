@@ -36,6 +36,9 @@ for (x , y , w , h) in faces:
     cv2.rectangle(image, (x , y), (x + w , y + h), (255, 0 , 0), 2)
 
 print(len(faces))
-cv2.imshow("Faces I detected", image)
-cv2.waitKey(0)
+
+
+#Only for App IDE
+# cv2.imshow("Faces I detected", image)
+# cv2.waitKey(0)
 
