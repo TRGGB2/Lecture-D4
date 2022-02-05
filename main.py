@@ -12,7 +12,7 @@ casPath = "caspathimage.xml"
 
 #Create the haar cascade
 
-faceCascade = cv2. CasecadeClassifier(casPath)
+faceCascade = cv2.CascadeClassifier(casPath)
 
 #read image into cv2
 
@@ -27,7 +27,7 @@ faces = faceCascade.detectMultiScale(
     scaleFactor = 1.1,
     minNeighbors = 8,
     minSize = (30 , 30), 
-    flag = cv2.CASCADE_SCALE_IMAGE
+    flags = cv2.CASCADE_SCALE_IMAGE
 )
 
 # Draw Rectangle around faces
