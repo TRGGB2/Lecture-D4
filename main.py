@@ -4,7 +4,7 @@ import cv2
 
 #image path
 
-imagepath = "img/1.jpg"
+imagepath = "img/5.jpg"
 
 #importing cascade
 
@@ -25,8 +25,8 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 faces = faceCascade.detectMultiScale(
     gray,
     scaleFactor = 1.1,
-    minNeighbors = 8,
-    minSize = (30 , 30), 
+    minNeighbors = 3,
+    minSize = (10 , 10), 
     flags = cv2.CASCADE_SCALE_IMAGE
 )
 
