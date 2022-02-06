@@ -4,7 +4,7 @@ import cv2
 
 #image path
 
-imagepath = "img/face.jpg"
+imagepath = "img/1.jpg"
 
 #importing cascade
 
@@ -36,7 +36,7 @@ for (x , y , w , h) in faces:
     cv2.rectangle(image, (x , y), (x + w , y + h), (255, 0 , 0), 2)
 
 print(len(faces))
-
+cv2.imwrite("detected/Faces.jpg", image)
 
 #Only for App IDE
 # cv2.imshow("Faces I detected", image)
